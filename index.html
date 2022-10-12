@@ -58,7 +58,14 @@ integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8
                 <use href="./images/close.svg#close"></use>
               </svg>
             </button>
+            <form class="js-speaker-form modal-form" >
+              <p>Підпишіться на розсилку</p>
+              <label for="mail">  </label>
+              <input type="email" name="mail" id="mail" placeholder="E-mail">
+              <button type="submit">Підписатися</button>
+           </form> 
           </div>
+          
           </div>
       </div>
 
@@ -493,8 +500,40 @@ integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8
           </li>
         </ul>
       </div>
+      <form class="js-speaker-form footer-form" >
+         <h2 class="footer-form-title">Підпишіться на розсилку</h2>
+    <ul class="form-item">
+      <li class="form-list">
+        <label for="mail">  </label>
+             <input class="footer-form-mail" type="email" name="mail" id="mail" placeholder="E-mail">
+      </li>
+      <li class="form-list">
+        <button class="footer-form-btn" type="submit">Підписатися
+          <svg class="footer-form-icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-send" ></use>
+          </svg> 
+         </button>
+      </li>
+    </ul>
+      </form>
+     
     </div>
     </footer>
     <script src="./js/modal.js"></script>
+
+    
+    <script>
+      (() => {
+          document.querySelector('.js-speaker-form').addEventListener('submit', e => {
+              e.preventDefault();
+
+              new FormData(e.currentTarget).forEach((value, name) =>
+                  console.log(`${name}: ${value}`),
+              );
+
+              e.currentTarget.reset();
+          });
+      })();
+  </script>
   </body>
 </html>
