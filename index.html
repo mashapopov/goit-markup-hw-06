@@ -51,22 +51,7 @@ integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8
         <div class="container ">
         <h1 class="hat-title">Ефективні рішення для вашого бізнесу</h1>
         <button data-modal-open class="hat-btn" type="button">Замовити послугу</button>
-        <div class="backdrop is-hidden" data-modal>
-          <div class="modal">
-            <button data-modal-close class="btn-close" >
-              <svg class="icon-close" height="18" width="18">
-                <use href="./images/close.svg#close"></use>
-              </svg>
-            </button>
-            <form class="js-speaker-form modal-form" >
-              <p>Підпишіться на розсилку</p>
-              <label for="mail">  </label>
-              <input type="email" name="mail" id="mail" placeholder="E-mail">
-              <button type="submit">Підписатися</button>
-           </form> 
-          </div>
-          
-          </div>
+        
       </div>
 
 
@@ -389,7 +374,6 @@ integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8
       <div class="container">
         <h2 class="klients-title">Постійні клієнти</h2>
         <ul class="klients-list">
-
           <ll class="klients-item">
             <a class="klients-link" href="">
               <svg class="klients-icon" width="106" height="60">
@@ -397,7 +381,6 @@ integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8
               </svg>
             </a>
           </ll>
-
           <ll class="klients-item">
             <a class="klients-link" href="">
               <svg class="klients-icon" width="106" height="60">
@@ -405,7 +388,6 @@ integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8
               </svg>
             </a>
           </ll>
-
           <ll class="klients-item">
             <a class="klients-link" href="">
               <svg class="klients-icon" width="106" height="60">
@@ -413,7 +395,6 @@ integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8
               </svg>
             </a>
           </ll>
-
           <ll class="klients-item">
             <a class="klients-link" href="">
               <svg class="klients-icon" width="106" height="60">
@@ -421,7 +402,6 @@ integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8
               </svg>
             </a>
           </ll>
-
           <ll class="klients-item">
             <a class="klients-link" href="">
               <svg class="klients-icon" width="106" height="60">
@@ -429,7 +409,6 @@ integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8
               </svg>
             </a>
           </ll>
-
           <ll class="klients-item">
             <a class="klients-link" href="">
               <svg class="klients-icon" width="106" height="60">
@@ -438,16 +417,12 @@ integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8
             </a>
         </ll>
         </ul>
-
       </div>
-
     </section>
 
     <!--підвал-->
     <footer class="footer ">
       <div class="container footer-container">
-
-      
       <div class="footer-nav">
       <a class="footer-link link" href="./index.html"> <span class="colortext">Web</span>Studio</a>
       <address class="adress">
@@ -505,7 +480,7 @@ integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8
     <ul class="form-item">
       <li class="form-list">
         <label for="mail">  </label>
-             <input class="footer-form-mail" type="email" name="mail" id="mail" placeholder="E-mail">
+             <input  type="email" name="mail" id="mail" placeholder="E-mail">
       </li>
       <li class="form-list">
         <button class="footer-form-btn" type="submit">Підписатися
@@ -516,12 +491,74 @@ integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8
       </li>
     </ul>
       </form>
-     
     </div>
     </footer>
-    <script src="./js/modal.js"></script>
 
-    
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button data-modal-close class="btn-close" >
+          <svg class="icon-close" height="18" width="18">
+            <use href="./images/close.svg#close"></use>
+          </svg>
+        </button>
+        
+        <form class="js-speaker-form modal-form" >
+         <h2 class="modal-form-title">Залиште свої дані, ми вам передзвонимо</h2>
+          <div class="modal-form-name">
+                <input class="modal-input" type="text" name="name" id="name" placeholder=" ">
+                <label class="modal-label" for="name"> Ім'я </label>
+                <span class="name-fon-svg">
+                      <svg class="name-svg" height="12px" width="12px">
+                          <use href="./images/icons.svg#Vector-5"></use>
+                      </svg>
+                </span>
+          </div>
+          <div class="modal-form-mail">
+            <input class="modal-input" type="email" name="mail" id="mail" placeholder=" ">
+            <label class="modal-label"  for="mail"> Пошта </label>
+            <span class="name-fon-svg">
+              <svg class="name-svg" height="12px" width="12px">
+                  <use href="./images/icons.svg#Vector-1"></use>
+              </svg>
+        </span>
+          </div>
+          <div class="modal-form-tel">
+            <input class="modal-input" type="tel" name="tel" id="tel" placeholder=" ">
+            <label class="modal-label"  for="tel"> Телефон </label>
+            <span class="name-fon-svg">
+              <svg class="name-svg" height="12px" width="12px">
+                  <use href="./images/icons.svg#Vector-2"></use>
+              </svg>
+        </span>
+          </div>
+
+
+
+          <div class="modal-form-comment">
+            <textarea class="modal-comment" name="comment" id="comment"  placeholder="Введіть текст"></textarea>
+            <label class="modal-label"  for="comment"> Коментар </label>
+          </div>
+
+
+          <div class="madal-form-policy">
+           
+            <label class="modal-label-policy" > 
+              <input class="checkbox" type="checkbox" name="policy" value="html"> 
+              
+              <svg class="modal-icon" width="11px" height="8px">
+                <use href="./images/icons.svg#Vector"></use>
+              </svg> 
+              Погоджуюся з розсилкою та приймаю <a class="policy-link" href="">Умови договору </a>
+            </label>
+
+            
+            </div>
+          <button class="btn-modal-form" type="submit">Відправити</button>
+       </form> 
+      </div>
+      
+      </div>
+    <script src="./js/modal.js"></script>
     <script>
       (() => {
           document.querySelector('.js-speaker-form').addEventListener('submit', e => {
