@@ -668,7 +668,7 @@ letter-spacing: 0.03em;
 color: var(--primary-text-color);
 background: #F5F4FA;
 
-            transition: color 250ms linear, background 250ms linear;
+ transition: color 250ms linear, background 250ms linear;
 }
 .buttons:hover,
 .buttons:focus{
@@ -806,6 +806,7 @@ font-size: 12px;
 line-height: 1.6;
 letter-spacing: 0.01em;
 color: var(--primary-text-color);
+transition: outline 250ms linear;
 } 
 .modal-form-comment{
     display:block;
@@ -834,6 +835,7 @@ font-size: 12px;
 line-height: 1.6;
 letter-spacing: 0.01em;
 color:var(--primary-text-color);
+transition: color 250ms linear;
 }
 .modal-form-comment textarea::placeholder{
 font-size: 12px;
@@ -870,7 +872,7 @@ justify-content: center;
 }
 
 .modal-label-policy{  
-    display: block;
+    display:flex;
 font-family: 'Roboto';
 font-style: normal;
 font-weight: 400;
@@ -879,10 +881,12 @@ line-height: 1.71;
 letter-spacing: 0.03em;
 color: #757575;
 align-items: center;
+justify-content: center;
+
 
 }
  .checkbox{
-     position: absolute;
+    position: absolute;
     width: 1px;
     height: 1px;
     margin: -1px;
@@ -909,13 +913,14 @@ align-items: center;
 
   
     .modal-icon{
-        display: inline-block;
+        display: block;
         height: 15px;
         width: 16px;
         background-color: var(--color-white);
         border: 2px solid var(--primary-text-color);
         border-radius: 2px;
         margin-right: 7px; 
+        transition: background 250ms linear;
 
     }
      .checkbox:checked + .modal-icon{
@@ -950,6 +955,7 @@ letter-spacing: 0.06em;
     line-height: 1px;
     text-decoration-line:underline; 
     color:var(--accent-color);
+    margin-left: 5px;
 }
 .name-fon-svg{
     position: absolute;
@@ -958,6 +964,7 @@ letter-spacing: 0.06em;
     left:12px;
     top: 50%;
     color: var(--accent-color);
+    transition: color 250ms linear;
 } 
 
  .modal-input:focus ~ .name-fon-svg{
@@ -1027,7 +1034,7 @@ border: 1px solid rgba(255, 255, 255, 0.3);
 filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 border-radius: 4px;
 color: var(--color-white);
-
+transition: color 250ms linear;
 }
 .form-list input::placeholder{
 font-size: 16px;
