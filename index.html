@@ -501,47 +501,45 @@ integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8
             <use href="./images/close.svg#close"></use>
           </svg>
         </button>
-        
+        <h2 class="modal-form-title">Залиште свої дані, ми вам передзвонимо</h2>
         <form class="js-speaker-form modal-form" >
-         <h2 class="modal-form-title">Залиште свої дані, ми вам передзвонимо</h2>
+         
           <div class="modal-form-name">
                 <input class="modal-input" type="text" name="name" id="name" placeholder=" ">
                 <label class="modal-label" for="name"> Ім'я </label>
-                <span class="name-fon-svg">
+
                       <svg class="name-svg" height="12px" width="12px">
                           <use href="./images/icons.svg#Vector-5"></use>
                       </svg>
-                </span>
           </div>
           <div class="modal-form-mail">
             <input class="modal-input" type="email" name="mail" id="mail" placeholder=" ">
             <label class="modal-label"  for="mail"> Пошта </label>
-            <span class="name-fon-svg">
+        
               <svg class="name-svg" height="12px" width="12px">
                   <use href="./images/icons.svg#Vector-1"></use>
               </svg>
-        </span>
-          </div>
+     
+          </div> 
           <div class="modal-form-tel">
             <input class="modal-input" type="tel" name="tel" id="tel" placeholder=" ">
             <label class="modal-label"  for="tel"> Телефон </label>
-            <span class="name-fon-svg">
+          
               <svg class="name-svg" height="12px" width="12px">
                   <use href="./images/icons.svg#Vector-2"></use>
               </svg>
-        </span>
-          </div>
+      
+          </div> 
 
 
 
           <div class="modal-form-comment">
+            <label class="modal-label-comment"  for="comment"> Коментар </label>
             <textarea class="modal-comment" name="comment" id="comment"  placeholder="Введіть текст"></textarea>
-            <label class="modal-label"  for="comment"> Коментар </label>
-          </div>
+          </div> 
 
 
           <div class="madal-form-policy">
-           
             <label class="modal-label-policy" > 
               <input class="checkbox" type="checkbox" name="policy" value="html"> 
               
@@ -550,16 +548,14 @@ integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8
               </svg> 
               Погоджуюся з розсилкою та приймаю <a class="policy-link" href="">Умови договору </a>
             </label>
-
-            
-            </div>
+            </div> 
           <button class="btn-modal-form" type="submit">Відправити</button>
        </form> 
       </div>
       
       </div>
     <script src="./js/modal.js"></script>
-    <script>
+     <script>
       (() => {
           document.querySelector('.js-speaker-form').addEventListener('submit', e => {
               e.preventDefault();
@@ -571,6 +567,6 @@ integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8
               e.currentTarget.reset();
           });
       })();
-  </script>
+  </script> 
   </body>
 </html>
